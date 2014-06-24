@@ -26,3 +26,23 @@ INSERT INTO tbl_user (username, password, email) VALUES ('test18', 'pass18', 'te
 INSERT INTO tbl_user (username, password, email) VALUES ('test19', 'pass19', 'test19@example.com');
 INSERT INTO tbl_user (username, password, email) VALUES ('test20', 'pass20', 'test20@example.com');
 INSERT INTO tbl_user (username, password, email) VALUES ('test21', 'pass21', 'test21@example.com');
+
+CREATE TABLE tbl_post (
+    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    title VARCHAR(128) NOT NULL,
+    content VARCHAR(128) NOT NULL,
+    tags INTEGER NOT NULL,
+    status VARCHAR(128) NOT NULL,
+);
+
+CREATE TABLE tbl_post (
+	id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+	frequency VARCHAR(128) NOT NULL
+);
+
+CREATE TABLE tbl_comment(
+	id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    content VARCHAR(128) NOT NULL,
+    status INTEGER NOT NULL,
+    author VARCHAR(128) NOT NULL
+);
